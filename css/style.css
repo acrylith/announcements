@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+}
+
+::selection {
+  background-color: rgba(97, 218, 251, 0.3);
+}
+
+a {
+  color: #61dafb;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head .links {
+  display: flex;
+  gap: 22px;
+}
+.head .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14pt;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.head .links a:hover {
+  color: #61dafb;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.pre-announcement {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 0 12px;
+}
+
+.pre-title {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+}
+.pre-title .del {
+  background-color: transparent;
+  border: 2px solid tomato;
+  border-radius: 20px;
+  color: tomato;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.pre-title .del:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.read-more {
+  text-decoration: none;
+  padding: 4px 6px;
+  border: 2px solid #61dafb;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.read-more:hover {
+  background-color: #61dafb;
+  color: white;
+}
+
+.announcement__info {
+  margin-bottom: 36px;
+}
+.announcement__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.announcement__date {
+  color: grey;
+  font-style: italic;
+}
+.announcement__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+}
+.announcement__buttons button {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 12pt;
+}
+.announcement__buttons .edit {
+  border-color: #61dafb;
+  color: #61dafb;
+}
+.announcement__buttons .edit:hover {
+  background-color: #61dafb;
+  color: white;
+}
+
+.search-wrapper {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.search-wrapper input {
+  background-color: transparent;
+  color: #61dafb;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12pt;
+  transition: all 0.5s;
+}
+.search-wrapper input:focus {
+  border: 2px solid #61dafb;
+}
+.search-wrapper button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 12pt;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.search-wrapper button:hover {
+  border-color: #61dafb;
+  color: #61dafb;
+}
+
+.error {
+  text-align: center;
+}
